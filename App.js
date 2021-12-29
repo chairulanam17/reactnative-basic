@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import ApiContainer from './BelajarApi/ApiContainer';
 import Induk from './Class/Induk';
 import GantiNama from './GantiNama';
 import Hasil from './Hasil';
@@ -28,7 +29,8 @@ export default function App() {
       {/* <GantiNama /> */}
       {/* <Induk /> */}
       {/* <NoMinus /> */}
-      <Hasil />
+      {/* <Hasil /> */}
+      <ApiContainer />
       <StatusBar style="auto" />
     </View>
   );

@@ -1,6 +1,6 @@
 import { Dimensions } from 'react-native';
 
-const deviceHeight = Dimensions.get('screen').height;
+const deviceHeight = Dimensions.get('window').height;
 const styles = {
   parentContainer: {
     height: deviceHeight,
@@ -23,7 +23,12 @@ const styles = {
   list: {
     paddingVertical: 4,
     margin: 5,
-    backgroundColor: '#fff',
+    backgroundColor: '#000',
+    borderRadius: 5,
+  },
+  lightText: {
+    color: '#fff',
+    alignSelf: 'center',
   },
 };
 export default styles;
